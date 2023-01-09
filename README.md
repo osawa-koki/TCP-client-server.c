@@ -1,7 +1,6 @@
-# sunflower.c
+# TPC-client-server.c
 
-C言語でひまわりを描写する🌻🌻🌻  
-なんか変だな、、、  
+🔥🔥🔥C++でTCPクライアントとサーバ間での通信を行ってみる。  
 
 ![成果物](./.development/img/fruit.png)  
 
@@ -10,7 +9,9 @@ C言語でひまわりを描写する🌻🌻🌻
 DevContainerを使用してDockerコンテナ内に入り、以下のコマンドを実行。  
 
 ```shell
-make && make run
-```
+# サーバのビルド・実行
+make server && make server-run
 
-これで、ビルドと実行をしてくれる。  
+# クライアントのビルド・実行
+make client && make client-run
+```
