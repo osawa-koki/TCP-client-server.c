@@ -1,6 +1,6 @@
 # TCP-client-server.cpp
 
-🔥🔥🔥C++でTCPクライアントとサーバ間での通信を行ってみる。  
+🔥🔥🔥 C++でTCPクライアントとサーバ間での通信を行ってみる。  
 
 ![成果物](./.development/img/fruit.gif)  
 
