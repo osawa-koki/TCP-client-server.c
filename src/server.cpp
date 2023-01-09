@@ -35,7 +35,10 @@ int main() {
 
     // クライアントからのメッセージを受信
     char buffer[1024];
-    int recvSize = recv(clientSocket, buffer, sizeof(buffer), 0);
+    int recvSize = recv(clientSocket, buffer, sizeof(buffer) - 1, 0);
+
+    // 受信したデータの末尾にNULL文字を追加
+    buffer[recvSize] = '\0';
 
     // 受信したメッセージを表示
     std::cout << "Received: " << buffer << std::endl;
