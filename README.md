@@ -15,3 +15,5 @@ make server && make server-run
 # クライアントのビルド・実行
 make client && make client-run
 ```
+
+サーバを実行してから、クライアントを実行する！  
