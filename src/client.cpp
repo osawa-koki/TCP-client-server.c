@@ -19,6 +19,7 @@ int main() {
     connect(clientSocket, (sockaddr*)&serverAddr, sizeof(serverAddr));
 
     // 送信するメッセージを受け取る
+    std::cout << "Enter message: ";
     std::string message;
     std::getline(std::cin, message);
 
@@ -31,7 +32,7 @@ int main() {
 
     // 受信したメッセージを表示
     std::cout << "Received: " << buffer << std::endl;
-    
+
     // ソケットを閉じる
     close(clientSocket);
   }
